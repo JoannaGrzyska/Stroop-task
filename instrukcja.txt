@@ -1,0 +1,17 @@
+INSTRUKCJA WYKONANIA ZADANIA
+
+W zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.
+Wskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:
+„z” dla koloru niebieskiego
+„x” dla koloru zielonego
+„n” dla koloru żółtego
+„m” dla koloru czerwonego
+PRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.
+NIEBIESKI → naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)
+ŻÓŁTY → naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)
+Oprócz słów, czasem na ekranie pojawiać będą się prostokąty w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru jest prostokąt poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)
+Postaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.
+Zanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.
+
+
+Aby rozpocząć, naciśnij spację.
