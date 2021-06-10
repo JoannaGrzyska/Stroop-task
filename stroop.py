@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on czerwiec 10, 2021, at 17:23
+    on czerwiec 10, 2021, at 18:18
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -82,22 +82,14 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "instruction"
 instructionClock = core.Clock()
-instrbox = visual.TextBox2(
-     win, text='INSTRUKCJA WYKONANIA ZADANIA\n\nW zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.\nWskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:\n\n„z” dla koloru niebieskiego\n„x” dla koloru zielonego\n„n” dla koloru żółtego\n„m” dla koloru czerwonego\n\nPRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.\nNIEBIESKI - naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)\nŻÓŁTY - naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)\nOprócz słów, czasem na ekranie pojawiać będą się litery w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru są litery poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)\nPostaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.\n\nZanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.\n\n\nAby rozpocząć, naciśnij spację.', font='Open Sans',
-     pos=(0, 0),     letterHeight=0.02,
-     size=None, borderWidth=2.0,
-     color='white', colorSpace='rgb',
-     opacity=None,
-     bold=False, italic=False,
-     lineSpacing=1.0,
-     padding=None,
-     anchor='center',
-     fillColor=None, borderColor='#ffffff',
-     flipHoriz=False, flipVert=False,
-     editable=False,
-     name='instrbox',
-     autoLog=True,
-)
+instr_image = visual.ImageStim(
+    win=win,
+    name='instr_image', 
+    image='instrukcja.jpg', mask=None,
+    ori=0.0, pos=(0, 0), size=(1,0.9),
+    color=[1,1,1], colorSpace='rgb', opacity=None,
+    flipHoriz=False, flipVert=False,
+    texRes=128.0, interpolate=True, depth=0.0)
 key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "reminder"
@@ -135,7 +127,7 @@ key_remind = visual.TextStim(win=win, name='key_remind',
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
-win.mouseVisible = False
+
 # Initialize components for Routine "reminder"
 reminderClock = core.Clock()
 remind = visual.TextStim(win=win, name='remind',
@@ -193,7 +185,7 @@ key_resp.keys = []
 key_resp.rt = []
 _key_resp_allKeys = []
 # keep track of which components have finished
-instructionComponents = [instrbox, key_resp]
+instructionComponents = [instr_image, key_resp]
 for thisComponent in instructionComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -216,14 +208,14 @@ while continueRoutine:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *instrbox* updates
-    if instrbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *instr_image* updates
+    if instr_image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        instrbox.frameNStart = frameN  # exact frame index
-        instrbox.tStart = t  # local t and not account for scr refresh
-        instrbox.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(instrbox, 'tStartRefresh')  # time at next scr refresh
-        instrbox.setAutoDraw(True)
+        instr_image.frameNStart = frameN  # exact frame index
+        instr_image.tStart = t  # local t and not account for scr refresh
+        instr_image.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instr_image, 'tStartRefresh')  # time at next scr refresh
+        instr_image.setAutoDraw(True)
     
     # *key_resp* updates
     waitOnFlip = False
@@ -268,8 +260,8 @@ while continueRoutine:
 for thisComponent in instructionComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('instrbox.started', instrbox.tStartRefresh)
-thisExp.addData('instrbox.stopped', instrbox.tStopRefresh)
+thisExp.addData('instr_image.started', instr_image.tStartRefresh)
+thisExp.addData('instr_image.stopped', instr_image.tStopRefresh)
 # check responses
 if key_resp.keys in ['', [], None]:  # No response was made
     key_resp.keys = None
