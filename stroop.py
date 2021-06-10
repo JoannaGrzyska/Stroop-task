@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on czerwiec 07, 2021, at 17:45
+    on czerwiec 10, 2021, at 17:23
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -82,13 +82,22 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "instruction"
 instructionClock = core.Clock()
-instrText = visual.TextStim(win=win, name='instrText',
-    text='INSTRUKCJA WYKONANIA ZADANIA\n\nW zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.\nWskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:\n„z” dla koloru niebieskiego\n„x” dla koloru zielonego\n„n” dla koloru żółtego\n„m” dla koloru czerwonego\n\nPRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.\nNIEBIESKI → naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)\nŻÓŁTY → naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)\nOprócz słów, czasem na ekranie pojawiać będą się prostokąty w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru jest prostokąt poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)\nPostaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.\n\nZanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.\n\nAby przejść dalej naciśnij spację.',
-    font='Open Sans',
-    pos=(0, 0), height=0.02, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=0.0);
+instrbox = visual.TextBox2(
+     win, text='INSTRUKCJA WYKONANIA ZADANIA\n\nW zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.\nWskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:\n\n„z” dla koloru niebieskiego\n„x” dla koloru zielonego\n„n” dla koloru żółtego\n„m” dla koloru czerwonego\n\nPRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.\nNIEBIESKI - naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)\nŻÓŁTY - naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)\nOprócz słów, czasem na ekranie pojawiać będą się litery w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru są litery poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)\nPostaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.\n\nZanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.\n\n\nAby rozpocząć, naciśnij spację.', font='Open Sans',
+     pos=(0, 0),     letterHeight=0.02,
+     size=None, borderWidth=2.0,
+     color='white', colorSpace='rgb',
+     opacity=None,
+     bold=False, italic=False,
+     lineSpacing=1.0,
+     padding=None,
+     anchor='center',
+     fillColor=None, borderColor='#ffffff',
+     flipHoriz=False, flipVert=False,
+     editable=False,
+     name='instrbox',
+     autoLog=True,
+)
 key_resp = keyboard.Keyboard()
 
 # Initialize components for Routine "reminder"
@@ -111,6 +120,13 @@ target = visual.TextStim(win=win, name='target',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
+fix = visual.TextStim(win=win, name='fix',
+    text='+',
+    font='Open Sans',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 response = keyboard.Keyboard()
 key_remind = visual.TextStim(win=win, name='key_remind',
     text='z = niebieski   x = zielony   n = żółty   m = czerwony',
@@ -118,8 +134,8 @@ key_remind = visual.TextStim(win=win, name='key_remind',
     pos=(0, 0.3), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
-    depth=-2.0);
-
+    depth=-3.0);
+win.mouseVisible = False
 # Initialize components for Routine "reminder"
 reminderClock = core.Clock()
 remind = visual.TextStim(win=win, name='remind',
@@ -140,6 +156,13 @@ target = visual.TextStim(win=win, name='target',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
+fix = visual.TextStim(win=win, name='fix',
+    text='+',
+    font='Open Sans',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-1.0);
 response = keyboard.Keyboard()
 key_remind = visual.TextStim(win=win, name='key_remind',
     text='z = niebieski   x = zielony   n = żółty   m = czerwony',
@@ -147,14 +170,14 @@ key_remind = visual.TextStim(win=win, name='key_remind',
     pos=(0, 0.3), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
-    depth=-2.0);
+    depth=-3.0);
 
 # Initialize components for Routine "END"
 ENDClock = core.Clock()
 end_text = visual.TextStim(win=win, name='end_text',
     text='To już koniec eksperymentu. Serdecznie dziękujemy za udział w badaniu!',
     font='Open Sans',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    pos=(0, 0), height=0.02, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
@@ -170,7 +193,7 @@ key_resp.keys = []
 key_resp.rt = []
 _key_resp_allKeys = []
 # keep track of which components have finished
-instructionComponents = [instrText, key_resp]
+instructionComponents = [instrbox, key_resp]
 for thisComponent in instructionComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -193,14 +216,14 @@ while continueRoutine:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *instrText* updates
-    if instrText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *instrbox* updates
+    if instrbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        instrText.frameNStart = frameN  # exact frame index
-        instrText.tStart = t  # local t and not account for scr refresh
-        instrText.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(instrText, 'tStartRefresh')  # time at next scr refresh
-        instrText.setAutoDraw(True)
+        instrbox.frameNStart = frameN  # exact frame index
+        instrbox.tStart = t  # local t and not account for scr refresh
+        instrbox.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(instrbox, 'tStartRefresh')  # time at next scr refresh
+        instrbox.setAutoDraw(True)
     
     # *key_resp* updates
     waitOnFlip = False
@@ -245,8 +268,8 @@ while continueRoutine:
 for thisComponent in instructionComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('instrText.started', instrText.tStartRefresh)
-thisExp.addData('instrText.stopped', instrText.tStopRefresh)
+thisExp.addData('instrbox.started', instrbox.tStartRefresh)
+thisExp.addData('instrbox.stopped', instrbox.tStopRefresh)
 # check responses
 if key_resp.keys in ['', [], None]:  # No response was made
     key_resp.keys = None
@@ -383,7 +406,7 @@ for thisTrial_2 in trials_2:
     response.rt = []
     _response_allKeys = []
     # keep track of which components have finished
-    trialComponents = [target, response, key_remind]
+    trialComponents = [target, fix, response, key_remind]
     for thisComponent in trialComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -407,7 +430,7 @@ for thisTrial_2 in trials_2:
         # update/draw components on each frame
         
         # *target* updates
-        if target.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        if target.status == NOT_STARTED and tThisFlip >= 0.8-frameTolerance:
             # keep track of start time/frame for later
             target.frameNStart = frameN  # exact frame index
             target.tStart = t  # local t and not account for scr refresh
@@ -422,6 +445,23 @@ for thisTrial_2 in trials_2:
                 target.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(target, 'tStopRefresh')  # time at next scr refresh
                 target.setAutoDraw(False)
+        
+        # *fix* updates
+        if fix.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            fix.frameNStart = frameN  # exact frame index
+            fix.tStart = t  # local t and not account for scr refresh
+            fix.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(fix, 'tStartRefresh')  # time at next scr refresh
+            fix.setAutoDraw(True)
+        if fix.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > fix.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                fix.tStop = t  # not accounting for scr refresh
+                fix.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(fix, 'tStopRefresh')  # time at next scr refresh
+                fix.setAutoDraw(False)
         
         # *response* updates
         waitOnFlip = False
@@ -477,6 +517,8 @@ for thisTrial_2 in trials_2:
             thisComponent.setAutoDraw(False)
     trials_2.addData('target.started', target.tStartRefresh)
     trials_2.addData('target.stopped', target.tStopRefresh)
+    trials_2.addData('fix.started', fix.tStartRefresh)
+    trials_2.addData('fix.stopped', fix.tStopRefresh)
     # check responses
     if response.keys in ['', [], None]:  # No response was made
         response.keys = None
@@ -591,7 +633,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=100.0, method='random', 
+trials = data.TrialHandler(nReps=10.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('stroop colors.xlsx'),
     seed=None, name='trials')
@@ -618,7 +660,7 @@ for thisTrial in trials:
     response.rt = []
     _response_allKeys = []
     # keep track of which components have finished
-    trialComponents = [target, response, key_remind]
+    trialComponents = [target, fix, response, key_remind]
     for thisComponent in trialComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -642,7 +684,7 @@ for thisTrial in trials:
         # update/draw components on each frame
         
         # *target* updates
-        if target.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
+        if target.status == NOT_STARTED and tThisFlip >= 0.8-frameTolerance:
             # keep track of start time/frame for later
             target.frameNStart = frameN  # exact frame index
             target.tStart = t  # local t and not account for scr refresh
@@ -657,6 +699,23 @@ for thisTrial in trials:
                 target.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(target, 'tStopRefresh')  # time at next scr refresh
                 target.setAutoDraw(False)
+        
+        # *fix* updates
+        if fix.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            fix.frameNStart = frameN  # exact frame index
+            fix.tStart = t  # local t and not account for scr refresh
+            fix.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(fix, 'tStartRefresh')  # time at next scr refresh
+            fix.setAutoDraw(True)
+        if fix.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > fix.tStartRefresh + 0.8-frameTolerance:
+                # keep track of stop time/frame for later
+                fix.tStop = t  # not accounting for scr refresh
+                fix.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(fix, 'tStopRefresh')  # time at next scr refresh
+                fix.setAutoDraw(False)
         
         # *response* updates
         waitOnFlip = False
@@ -712,6 +771,8 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     trials.addData('target.started', target.tStartRefresh)
     trials.addData('target.stopped', target.tStopRefresh)
+    trials.addData('fix.started', fix.tStartRefresh)
+    trials.addData('fix.stopped', fix.tStopRefresh)
     # check responses
     if response.keys in ['', [], None]:  # No response was made
         response.keys = None
@@ -726,7 +787,7 @@ for thisTrial in trials:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 100.0 repeats of 'trials'
+# completed 10.0 repeats of 'trials'
 
 
 # ------Prepare to start Routine "END"-------

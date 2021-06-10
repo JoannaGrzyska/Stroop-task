@@ -51,11 +51,36 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="num"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.5" valType="num"/>
+        <Param name="startVal" updates="None" val="0.8" valType="num"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="4" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="$word" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <TextComponent name="fix">
+        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="fix" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.8" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="+" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -104,31 +129,42 @@
       </TextComponent>
     </Routine>
     <Routine name="instruction">
-      <TextComponent name="instrText">
+      <TextboxComponent name="instrbox">
+        <Param name="anchor" updates="constant" val="center" valType="str"/>
+        <Param name="autoLog" updates="constant" val="True" valType="bool"/>
+        <Param name="bold" updates="constant" val="False" valType="bool"/>
+        <Param name="borderColor" updates="constant" val="#ffffff" valType="color"/>
+        <Param name="borderWidth" updates="constant" val="2" valType="num"/>
         <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="num"/>
-        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="editable" updates="constant" val="False" valType="bool"/>
+        <Param name="fillColor" updates="constant" val="None" valType="color"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="italic" updates="constant" val="False" valType="bool"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
         <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
-        <Param name="name" updates="None" val="instrText" valType="code"/>
+        <Param name="lineSpacing" updates="constant" val="1.0" valType="num"/>
+        <Param name="name" updates="None" val="instrbox" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="num"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="num"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="INSTRUKCJA WYKONANIA ZADANIA&amp;#10;&amp;#10;W zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.&amp;#10;Wskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:&amp;#10;„z” dla koloru niebieskiego&amp;#10;„x” dla koloru zielonego&amp;#10;„n” dla koloru żółtego&amp;#10;„m” dla koloru czerwonego&amp;#10;&amp;#10;PRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.&amp;#10;NIEBIESKI → naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)&amp;#10;ŻÓŁTY → naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)&amp;#10;Oprócz słów, czasem na ekranie pojawiać będą się prostokąty w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru jest prostokąt poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)&amp;#10;Postaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.&amp;#10;&amp;#10;Zanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.&amp;#10;&amp;#10;Aby przejść dalej naciśnij spację." valType="str"/>
+        <Param name="text" updates="constant" val="INSTRUKCJA WYKONANIA ZADANIA&amp;#10;&amp;#10;W zadaniu, które za chwilę wykonasz, na ekranie pojawiać się będą nazwy kolorów (NIEBIESKI, ZIELONY, ŻÓŁTY, CZERWONY) w różnych kolorach czcionki. Twoim zadaniem będzie wskazanie KOLORU CZCIONKI danego słowa, ignorując przy tym znaczenie tego słowa.&amp;#10;Wskazanie koloru będzie polegało na naciśnięciu klawisza na klawiaturze, odpowiadającemu danemu kolorowi:&amp;#10;&amp;#10;„z” dla koloru niebieskiego&amp;#10;„x” dla koloru zielonego&amp;#10;„n” dla koloru żółtego&amp;#10;„m” dla koloru czerwonego&amp;#10;&amp;#10;PRZYKŁAD: Jeśli zobaczysz słowo CZERWONY (którego kolor czcionki będzie zielony), naciśnij klawisz „x” dla koloru zielonego, niezależnie od tego, co oznacza wyświetlone słowo.&amp;#10;NIEBIESKI - naciśnij klawisz „z” dla koloru niebieskiego (bo kolor czcionki jest niebieski)&amp;#10;ŻÓŁTY - naciśnij klawisz „m” dla koloru czerwonego (bo kolor czcionki jest czerwony)&amp;#10;Oprócz słów, czasem na ekranie pojawiać będą się litery w różnych kolorach. Twoje zadanie w takim przypadku jest takie samo – wskazanie jakiego koloru są litery poprzez naciśnięcie odpowiedniego klawisza na klawiaturze (poszczególne kolory odpowiadają tym samym klawiszom, co w przypadku wyświetlanych słów)&amp;#10;Postaraj się odpowiadać poprawnie i jak najszybciej, gdyż mierzony będzie czas Twojej reakcji.&amp;#10;&amp;#10;Zanim rozpocznie się sesja eksperymentalna, zostaniesz poddany sesji treningowej, która ułatwi Ci zrozumienie zadania. W trakcie sesji treningowej, po każdej udzielonej odpowiedzi zostaniesz poinformowany o tym, czy Twoja odpowiedź była poprawna czy błędna. Informacja o poprawności nie będzie się pojawiać w sesji eksperymentalnej.&amp;#10;&amp;#10;&amp;#10;Aby rozpocząć, naciśnij spację." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
-      </TextComponent>
+      </TextboxComponent>
       <KeyboardComponent name="key_resp">
         <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
@@ -203,7 +239,7 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
         <Param name="name" updates="None" val="end_text" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
