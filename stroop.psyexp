@@ -240,12 +240,12 @@
     <Routine name="reminder"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'word': 'czerwony', 'color': 'czerwony', 'zgodny': 1, 'correctANS': 'm'}, {'word': 'czerwony', 'color': 'zielony', 'zgodny': 0, 'correctANS': 'x'}, {'word': 'zielony', 'color': 'zielony', 'zgodny': 1, 'correctANS': 'x'}, {'word': 'zielony', 'color': 'niebieski', 'zgodny': 0, 'correctANS': 'z'}, {'word': 'niebieski', 'color': 'niebieski', 'zgodny': 1, 'correctANS': 'z'}, {'word': 'niebieski', 'color': 'czerwony', 'zgodny': 0, 'correctANS': 'm'}, {'word': 'żółty', 'color': 'żółty', 'zgodny': 1, 'correctANS': 'n'}, {'word': 'żółty', 'color': 'czerwony', 'zgodny': 0, 'correctANS': 'm'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}, {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}, {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}, {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}, {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}, {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}, {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}, {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}, {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}, {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="stroop colors.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="100" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
