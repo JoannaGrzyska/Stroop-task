@@ -1,0 +1,1137 @@
+3.7051 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+19.7888 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+21.6195 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016656D05AC8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000016656CE7208>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.6205 	EXP 	window1: mouseVisible = True
+21.6205 	EXP 	window1: recordFrameIntervals = False
+21.7854 	EXP 	window1: recordFrameIntervals = True
+21.9687 	EXP 	window1: recordFrameIntervals = False
+22.1968 	EXP 	Created instr_image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='instrukcja.jpg', interpolate=True, mask=None, maskParams=None, name='instr_image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1. , 0.9]), texRes=128.0, units='height', win=Window(...))
+22.5366 	EXP 	Created remind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='remind', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5384 	EXP 	Created target = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='target', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5418 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+22.5471 	EXP 	Created key_remind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='key_remind', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5564 	EXP 	Created remind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='remind', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5570 	EXP 	Created target = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='target', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5583 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fix', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+22.5611 	EXP 	Created key_remind = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='key_remind', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5667 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.6012 	EXP 	instr_image: autoDraw = True
+28.6329 	DATA 	Keypress: space
+28.6345 	EXP 	instr_image: autoDraw = False
+28.6345 	EXP 	remind: autoDraw = True
+34.2093 	EXP 	Imported stroop colors.xlsx as conditions, 10 conditions, 4 params
+34.2135 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+34.2138 	EXP 	New trial (rep=0, index=0): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+34.2233 	DATA 	Keypress: space
+34.2257 	EXP 	remind: autoDraw = False
+34.2257 	EXP 	target: text = 'zielony'
+34.2257 	EXP 	fix: autoDraw = True
+34.2257 	EXP 	key_remind: autoDraw = True
+35.0172 	EXP 	target: autoDraw = True
+35.0336 	EXP 	fix: autoDraw = False
+36.2890 	DATA 	Keypress: x
+36.3136 	EXP 	New trial (rep=0, index=1): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+36.3229 	EXP 	target: autoDraw = False
+36.3229 	EXP 	fix: autoDraw = False
+36.3229 	EXP 	key_remind: autoDraw = False
+36.3229 	EXP 	target: text = 'AAAAAA'
+36.3229 	EXP 	fix: autoDraw = True
+36.3229 	EXP 	key_remind: autoDraw = True
+37.1176 	EXP 	target: autoDraw = True
+37.1334 	EXP 	fix: autoDraw = False
+40.4054 	DATA 	Keypress: n
+40.4161 	EXP 	New trial (rep=0, index=2): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+40.4329 	EXP 	target: autoDraw = False
+40.4329 	EXP 	fix: autoDraw = False
+40.4329 	EXP 	key_remind: autoDraw = False
+40.4329 	EXP 	target: text = 'żółty'
+40.4329 	EXP 	fix: autoDraw = True
+40.4329 	EXP 	key_remind: autoDraw = True
+41.2169 	EXP 	target: autoDraw = True
+41.2332 	EXP 	fix: autoDraw = False
+42.9699 	EXP 	New trial (rep=0, index=3): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+42.9773 	DATA 	Keypress: m
+42.9804 	EXP 	target: autoDraw = False
+42.9804 	EXP 	fix: autoDraw = False
+42.9804 	EXP 	key_remind: autoDraw = False
+42.9804 	EXP 	target: text = 'niebieski'
+42.9804 	EXP 	fix: autoDraw = True
+42.9804 	EXP 	key_remind: autoDraw = True
+43.7666 	EXP 	target: autoDraw = True
+43.7831 	EXP 	fix: autoDraw = False
+44.9384 	EXP 	New trial (rep=0, index=4): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+44.9447 	DATA 	Keypress: z
+44.9475 	EXP 	target: autoDraw = False
+44.9475 	EXP 	fix: autoDraw = False
+44.9475 	EXP 	key_remind: autoDraw = False
+44.9475 	EXP 	target: text = 'HHHHHH'
+44.9475 	EXP 	fix: autoDraw = True
+44.9475 	EXP 	key_remind: autoDraw = True
+45.7330 	EXP 	target: autoDraw = True
+45.7491 	EXP 	fix: autoDraw = False
+46.8369 	EXP 	New trial (rep=0, index=5): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+46.8443 	DATA 	Keypress: n
+46.8470 	EXP 	target: autoDraw = False
+46.8470 	EXP 	fix: autoDraw = False
+46.8470 	EXP 	key_remind: autoDraw = False
+46.8470 	EXP 	target: text = 'czerwony'
+46.8470 	EXP 	fix: autoDraw = True
+46.8470 	EXP 	key_remind: autoDraw = True
+47.6327 	EXP 	target: autoDraw = True
+47.6490 	EXP 	fix: autoDraw = False
+48.4380 	DATA 	Keypress: x
+48.4531 	EXP 	New trial (rep=0, index=6): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+48.4652 	EXP 	target: autoDraw = False
+48.4652 	EXP 	fix: autoDraw = False
+48.4652 	EXP 	key_remind: autoDraw = False
+48.4652 	EXP 	target: text = 'czerwony'
+48.4652 	EXP 	fix: autoDraw = True
+48.4652 	EXP 	key_remind: autoDraw = True
+49.2486 	EXP 	target: autoDraw = True
+49.2652 	EXP 	fix: autoDraw = False
+49.8193 	EXP 	New trial (rep=0, index=7): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+49.8242 	DATA 	Keypress: m
+49.8281 	EXP 	target: autoDraw = False
+49.8281 	EXP 	fix: autoDraw = False
+49.8281 	EXP 	key_remind: autoDraw = False
+49.8281 	EXP 	target: text = 'zielony'
+49.8281 	EXP 	fix: autoDraw = True
+49.8281 	EXP 	key_remind: autoDraw = True
+50.6159 	EXP 	target: autoDraw = True
+50.6323 	EXP 	fix: autoDraw = False
+52.2690 	EXP 	New trial (rep=0, index=8): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+52.2737 	DATA 	Keypress: z
+52.2766 	EXP 	target: autoDraw = False
+52.2766 	EXP 	fix: autoDraw = False
+52.2766 	EXP 	key_remind: autoDraw = False
+52.2766 	EXP 	target: text = 'żółty'
+52.2766 	EXP 	fix: autoDraw = True
+52.2766 	EXP 	key_remind: autoDraw = True
+53.0648 	EXP 	target: autoDraw = True
+53.0822 	EXP 	fix: autoDraw = False
+53.9697 	EXP 	New trial (rep=0, index=9): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+53.9745 	DATA 	Keypress: n
+53.9782 	EXP 	target: autoDraw = False
+53.9782 	EXP 	fix: autoDraw = False
+53.9782 	EXP 	key_remind: autoDraw = False
+53.9782 	EXP 	target: text = 'niebieski'
+53.9782 	EXP 	fix: autoDraw = True
+53.9782 	EXP 	key_remind: autoDraw = True
+54.7649 	EXP 	target: autoDraw = True
+54.7818 	EXP 	fix: autoDraw = False
+55.8056 	DATA 	Keypress: m
+55.8144 	EXP 	target: autoDraw = False
+55.8144 	EXP 	fix: autoDraw = False
+55.8144 	EXP 	key_remind: autoDraw = False
+55.8144 	EXP 	remind: autoDraw = True
+58.3059 	EXP 	Imported stroop colors.xlsx as conditions, 10 conditions, 4 params
+58.3063 	EXP 	Created sequence: random, trialTypes=10, nReps=10, seed=None
+58.3065 	EXP 	New trial (rep=0, index=0): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+58.3105 	DATA 	Keypress: space
+58.3130 	EXP 	remind: autoDraw = False
+58.3130 	EXP 	target: text = 'niebieski'
+58.3130 	EXP 	fix: autoDraw = True
+58.3130 	EXP 	key_remind: autoDraw = True
+59.1140 	EXP 	target: autoDraw = True
+59.1140 	EXP 	fix: autoDraw = False
+60.9537 	DATA 	Keypress: z
+60.9695 	EXP 	New trial (rep=0, index=1): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+60.9782 	EXP 	target: autoDraw = False
+60.9782 	EXP 	fix: autoDraw = False
+60.9782 	EXP 	key_remind: autoDraw = False
+60.9782 	EXP 	target: text = 'żółty'
+60.9782 	EXP 	fix: autoDraw = True
+60.9782 	EXP 	key_remind: autoDraw = True
+61.7637 	EXP 	target: autoDraw = True
+61.7803 	EXP 	fix: autoDraw = False
+62.4018 	EXP 	New trial (rep=0, index=2): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+62.4076 	DATA 	Keypress: n
+62.4111 	EXP 	target: autoDraw = False
+62.4111 	EXP 	fix: autoDraw = False
+62.4111 	EXP 	key_remind: autoDraw = False
+62.4111 	EXP 	target: text = 'niebieski'
+62.4111 	EXP 	fix: autoDraw = True
+62.4111 	EXP 	key_remind: autoDraw = True
+63.1968 	EXP 	target: autoDraw = True
+63.2140 	EXP 	fix: autoDraw = False
+63.7518 	EXP 	New trial (rep=0, index=3): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+63.7564 	DATA 	Keypress: m
+63.7597 	EXP 	target: autoDraw = False
+63.7597 	EXP 	fix: autoDraw = False
+63.7597 	EXP 	key_remind: autoDraw = False
+63.7597 	EXP 	target: text = 'żółty'
+63.7597 	EXP 	fix: autoDraw = True
+63.7597 	EXP 	key_remind: autoDraw = True
+64.5466 	EXP 	target: autoDraw = True
+64.5644 	EXP 	fix: autoDraw = False
+65.2346 	EXP 	New trial (rep=0, index=4): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+65.2402 	DATA 	Keypress: m
+65.2437 	EXP 	target: autoDraw = False
+65.2437 	EXP 	fix: autoDraw = False
+65.2437 	EXP 	key_remind: autoDraw = False
+65.2437 	EXP 	target: text = 'czerwony'
+65.2437 	EXP 	fix: autoDraw = True
+65.2437 	EXP 	key_remind: autoDraw = True
+66.0303 	EXP 	target: autoDraw = True
+66.0464 	EXP 	fix: autoDraw = False
+66.5343 	EXP 	New trial (rep=0, index=5): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+66.5391 	DATA 	Keypress: m
+66.5417 	EXP 	target: autoDraw = False
+66.5417 	EXP 	fix: autoDraw = False
+66.5417 	EXP 	key_remind: autoDraw = False
+66.5417 	EXP 	target: text = 'AAAAAA'
+66.5417 	EXP 	fix: autoDraw = True
+66.5417 	EXP 	key_remind: autoDraw = True
+67.3297 	EXP 	target: autoDraw = True
+67.3467 	EXP 	fix: autoDraw = False
+67.7354 	EXP 	New trial (rep=0, index=6): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+67.7401 	DATA 	Keypress: m
+67.7437 	EXP 	target: autoDraw = False
+67.7437 	EXP 	fix: autoDraw = False
+67.7437 	EXP 	key_remind: autoDraw = False
+67.7437 	EXP 	target: text = 'czerwony'
+67.7437 	EXP 	fix: autoDraw = True
+67.7437 	EXP 	key_remind: autoDraw = True
+68.5295 	EXP 	target: autoDraw = True
+68.5464 	EXP 	fix: autoDraw = False
+69.2185 	DATA 	Keypress: x
+69.2340 	EXP 	New trial (rep=0, index=7): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+69.2413 	EXP 	target: autoDraw = False
+69.2413 	EXP 	fix: autoDraw = False
+69.2413 	EXP 	key_remind: autoDraw = False
+69.2413 	EXP 	target: text = 'HHHHHH'
+69.2413 	EXP 	fix: autoDraw = True
+69.2413 	EXP 	key_remind: autoDraw = True
+70.0293 	EXP 	target: autoDraw = True
+70.0459 	EXP 	fix: autoDraw = False
+70.6008 	EXP 	New trial (rep=0, index=8): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+70.6056 	DATA 	Keypress: n
+70.6092 	EXP 	target: autoDraw = False
+70.6092 	EXP 	fix: autoDraw = False
+70.6092 	EXP 	key_remind: autoDraw = False
+70.6092 	EXP 	target: text = 'zielony'
+70.6092 	EXP 	fix: autoDraw = True
+70.6092 	EXP 	key_remind: autoDraw = True
+71.3958 	EXP 	target: autoDraw = True
+71.4131 	EXP 	fix: autoDraw = False
+72.0003 	EXP 	New trial (rep=0, index=9): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+72.0040 	DATA 	Keypress: z
+72.0124 	EXP 	target: autoDraw = False
+72.0124 	EXP 	fix: autoDraw = False
+72.0124 	EXP 	key_remind: autoDraw = False
+72.0124 	EXP 	target: text = 'zielony'
+72.0124 	EXP 	fix: autoDraw = True
+72.0124 	EXP 	key_remind: autoDraw = True
+72.7957 	EXP 	target: autoDraw = True
+72.8126 	EXP 	fix: autoDraw = False
+73.7167 	EXP 	New trial (rep=1, index=0): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+73.7204 	DATA 	Keypress: x
+73.7290 	EXP 	target: autoDraw = False
+73.7290 	EXP 	fix: autoDraw = False
+73.7290 	EXP 	key_remind: autoDraw = False
+73.7290 	EXP 	target: text = 'zielony'
+73.7290 	EXP 	fix: autoDraw = True
+73.7290 	EXP 	key_remind: autoDraw = True
+74.5128 	EXP 	target: autoDraw = True
+74.5291 	EXP 	fix: autoDraw = False
+75.4336 	EXP 	New trial (rep=1, index=1): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+75.4388 	DATA 	Keypress: z
+75.4424 	EXP 	target: autoDraw = False
+75.4424 	EXP 	fix: autoDraw = False
+75.4424 	EXP 	key_remind: autoDraw = False
+75.4424 	EXP 	target: text = 'niebieski'
+75.4424 	EXP 	fix: autoDraw = True
+75.4424 	EXP 	key_remind: autoDraw = True
+76.2285 	EXP 	target: autoDraw = True
+76.2452 	EXP 	fix: autoDraw = False
+77.0682 	DATA 	Keypress: m
+77.0829 	EXP 	New trial (rep=1, index=2): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+77.0956 	EXP 	target: autoDraw = False
+77.0956 	EXP 	fix: autoDraw = False
+77.0956 	EXP 	key_remind: autoDraw = False
+77.0956 	EXP 	target: text = 'żółty'
+77.0956 	EXP 	fix: autoDraw = True
+77.0956 	EXP 	key_remind: autoDraw = True
+77.8782 	EXP 	target: autoDraw = True
+77.9121 	EXP 	fix: autoDraw = False
+78.2501 	EXP 	New trial (rep=1, index=3): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+78.2535 	DATA 	Keypress: n
+78.2625 	EXP 	target: autoDraw = False
+78.2625 	EXP 	fix: autoDraw = False
+78.2625 	EXP 	key_remind: autoDraw = False
+78.2625 	EXP 	target: text = 'żółty'
+78.2625 	EXP 	fix: autoDraw = True
+78.2625 	EXP 	key_remind: autoDraw = True
+79.0457 	EXP 	target: autoDraw = True
+79.0615 	EXP 	fix: autoDraw = False
+79.7832 	EXP 	New trial (rep=1, index=4): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+79.7886 	DATA 	Keypress: m
+79.7921 	EXP 	target: autoDraw = False
+79.7921 	EXP 	fix: autoDraw = False
+79.7921 	EXP 	key_remind: autoDraw = False
+79.7921 	EXP 	target: text = 'czerwony'
+79.7921 	EXP 	fix: autoDraw = True
+79.7921 	EXP 	key_remind: autoDraw = True
+80.5781 	EXP 	target: autoDraw = True
+80.5947 	EXP 	fix: autoDraw = False
+81.1335 	DATA 	Keypress: x
+81.1499 	EXP 	New trial (rep=1, index=5): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+81.1586 	EXP 	target: autoDraw = False
+81.1586 	EXP 	fix: autoDraw = False
+81.1586 	EXP 	key_remind: autoDraw = False
+81.1586 	EXP 	target: text = 'niebieski'
+81.1586 	EXP 	fix: autoDraw = True
+81.1586 	EXP 	key_remind: autoDraw = True
+81.9452 	EXP 	target: autoDraw = True
+81.9619 	EXP 	fix: autoDraw = False
+82.2328 	EXP 	New trial (rep=1, index=6): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+82.2375 	DATA 	Keypress: z
+82.2413 	EXP 	target: autoDraw = False
+82.2413 	EXP 	fix: autoDraw = False
+82.2413 	EXP 	key_remind: autoDraw = False
+82.2413 	EXP 	target: text = 'zielony'
+82.2413 	EXP 	fix: autoDraw = True
+82.2413 	EXP 	key_remind: autoDraw = True
+83.0277 	EXP 	target: autoDraw = True
+83.0447 	EXP 	fix: autoDraw = False
+83.4653 	EXP 	New trial (rep=1, index=7): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+83.4699 	DATA 	Keypress: x
+83.4775 	EXP 	target: autoDraw = False
+83.4775 	EXP 	fix: autoDraw = False
+83.4775 	EXP 	key_remind: autoDraw = False
+83.4775 	EXP 	target: text = 'czerwony'
+83.4775 	EXP 	fix: autoDraw = True
+83.4775 	EXP 	key_remind: autoDraw = True
+84.2612 	EXP 	target: autoDraw = True
+84.2788 	EXP 	fix: autoDraw = False
+84.9995 	DATA 	Keypress: m
+85.0157 	EXP 	New trial (rep=1, index=8): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+85.0231 	EXP 	target: autoDraw = False
+85.0231 	EXP 	fix: autoDraw = False
+85.0231 	EXP 	key_remind: autoDraw = False
+85.0231 	EXP 	target: text = 'HHHHHH'
+85.0231 	EXP 	fix: autoDraw = True
+85.0231 	EXP 	key_remind: autoDraw = True
+85.8110 	EXP 	target: autoDraw = True
+85.8273 	EXP 	fix: autoDraw = False
+86.2499 	DATA 	Keypress: n
+86.2653 	EXP 	New trial (rep=1, index=9): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+86.2728 	EXP 	target: autoDraw = False
+86.2728 	EXP 	fix: autoDraw = False
+86.2728 	EXP 	key_remind: autoDraw = False
+86.2728 	EXP 	target: text = 'AAAAAA'
+86.2728 	EXP 	fix: autoDraw = True
+86.2728 	EXP 	key_remind: autoDraw = True
+87.0609 	EXP 	target: autoDraw = True
+87.0777 	EXP 	fix: autoDraw = False
+87.6818 	EXP 	New trial (rep=2, index=0): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+87.6853 	DATA 	Keypress: m
+87.6938 	EXP 	target: autoDraw = False
+87.6938 	EXP 	fix: autoDraw = False
+87.6938 	EXP 	key_remind: autoDraw = False
+87.6938 	EXP 	target: text = 'AAAAAA'
+87.6938 	EXP 	fix: autoDraw = True
+87.6938 	EXP 	key_remind: autoDraw = True
+88.4770 	EXP 	target: autoDraw = True
+88.4942 	EXP 	fix: autoDraw = False
+88.8656 	DATA 	Keypress: m
+88.8825 	EXP 	New trial (rep=2, index=1): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+88.8906 	EXP 	target: autoDraw = False
+88.8906 	EXP 	fix: autoDraw = False
+88.8906 	EXP 	key_remind: autoDraw = False
+88.8906 	EXP 	target: text = 'niebieski'
+88.8906 	EXP 	fix: autoDraw = True
+88.8906 	EXP 	key_remind: autoDraw = True
+89.6769 	EXP 	target: autoDraw = True
+89.6937 	EXP 	fix: autoDraw = False
+90.1800 	EXP 	New trial (rep=2, index=2): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+90.1854 	DATA 	Keypress: z
+90.1886 	EXP 	target: autoDraw = False
+90.1886 	EXP 	fix: autoDraw = False
+90.1886 	EXP 	key_remind: autoDraw = False
+90.1886 	EXP 	target: text = 'HHHHHH'
+90.1886 	EXP 	fix: autoDraw = True
+90.1886 	EXP 	key_remind: autoDraw = True
+90.9767 	EXP 	target: autoDraw = True
+90.9934 	EXP 	fix: autoDraw = False
+91.5150 	EXP 	New trial (rep=2, index=3): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+91.5195 	DATA 	Keypress: n
+91.5228 	EXP 	target: autoDraw = False
+91.5228 	EXP 	fix: autoDraw = False
+91.5228 	EXP 	key_remind: autoDraw = False
+91.5228 	EXP 	target: text = 'zielony'
+91.5228 	EXP 	fix: autoDraw = True
+91.5228 	EXP 	key_remind: autoDraw = True
+92.3103 	EXP 	target: autoDraw = True
+92.3265 	EXP 	fix: autoDraw = False
+92.8480 	EXP 	New trial (rep=2, index=4): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+92.8526 	DATA 	Keypress: z
+92.8552 	EXP 	target: autoDraw = False
+92.8552 	EXP 	fix: autoDraw = False
+92.8552 	EXP 	key_remind: autoDraw = False
+92.8552 	EXP 	target: text = 'żółty'
+92.8552 	EXP 	fix: autoDraw = True
+92.8552 	EXP 	key_remind: autoDraw = True
+93.6437 	EXP 	target: autoDraw = True
+93.6603 	EXP 	fix: autoDraw = False
+94.1979 	EXP 	New trial (rep=2, index=5): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+94.2026 	DATA 	Keypress: n
+94.2055 	EXP 	target: autoDraw = False
+94.2055 	EXP 	fix: autoDraw = False
+94.2055 	EXP 	key_remind: autoDraw = False
+94.2055 	EXP 	target: text = 'czerwony'
+94.2055 	EXP 	fix: autoDraw = True
+94.2055 	EXP 	key_remind: autoDraw = True
+94.9934 	EXP 	target: autoDraw = True
+95.0096 	EXP 	fix: autoDraw = False
+95.4640 	EXP 	New trial (rep=2, index=6): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+95.4696 	DATA 	Keypress: m
+95.4734 	EXP 	target: autoDraw = False
+95.4734 	EXP 	fix: autoDraw = False
+95.4734 	EXP 	key_remind: autoDraw = False
+95.4734 	EXP 	target: text = 'niebieski'
+95.4734 	EXP 	fix: autoDraw = True
+95.4734 	EXP 	key_remind: autoDraw = True
+96.2593 	EXP 	target: autoDraw = True
+96.2758 	EXP 	fix: autoDraw = False
+97.1807 	EXP 	New trial (rep=2, index=7): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+97.1852 	DATA 	Keypress: m
+97.1880 	EXP 	target: autoDraw = False
+97.1880 	EXP 	fix: autoDraw = False
+97.1880 	EXP 	key_remind: autoDraw = False
+97.1880 	EXP 	target: text = 'żółty'
+97.1880 	EXP 	fix: autoDraw = True
+97.1880 	EXP 	key_remind: autoDraw = True
+97.9760 	EXP 	target: autoDraw = True
+97.9937 	EXP 	fix: autoDraw = False
+98.6972 	EXP 	New trial (rep=2, index=8): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+98.7019 	DATA 	Keypress: n
+98.7061 	EXP 	target: autoDraw = False
+98.7061 	EXP 	fix: autoDraw = False
+98.7061 	EXP 	key_remind: autoDraw = False
+98.7061 	EXP 	target: text = 'czerwony'
+98.7061 	EXP 	fix: autoDraw = True
+98.7061 	EXP 	key_remind: autoDraw = True
+99.4928 	EXP 	target: autoDraw = True
+99.5092 	EXP 	fix: autoDraw = False
+101.1465 	EXP 	New trial (rep=2, index=9): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+101.1508 	DATA 	Keypress: m
+101.1589 	EXP 	target: autoDraw = False
+101.1589 	EXP 	fix: autoDraw = False
+101.1589 	EXP 	key_remind: autoDraw = False
+101.1589 	EXP 	target: text = 'zielony'
+101.1589 	EXP 	fix: autoDraw = True
+101.1589 	EXP 	key_remind: autoDraw = True
+101.9421 	EXP 	target: autoDraw = True
+101.9587 	EXP 	fix: autoDraw = False
+102.7974 	EXP 	New trial (rep=3, index=0): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+102.8031 	DATA 	Keypress: x
+102.8063 	EXP 	target: autoDraw = False
+102.8063 	EXP 	fix: autoDraw = False
+102.8063 	EXP 	key_remind: autoDraw = False
+102.8063 	EXP 	target: text = 'niebieski'
+102.8063 	EXP 	fix: autoDraw = True
+102.8063 	EXP 	key_remind: autoDraw = True
+103.5920 	EXP 	target: autoDraw = True
+103.6084 	EXP 	fix: autoDraw = False
+105.4303 	DATA 	Keypress: m
+105.4465 	EXP 	New trial (rep=3, index=1): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+105.4588 	EXP 	target: autoDraw = False
+105.4588 	EXP 	fix: autoDraw = False
+105.4588 	EXP 	key_remind: autoDraw = False
+105.4588 	EXP 	target: text = 'niebieski'
+105.4588 	EXP 	fix: autoDraw = True
+105.4588 	EXP 	key_remind: autoDraw = True
+106.2419 	EXP 	target: autoDraw = True
+106.2583 	EXP 	fix: autoDraw = False
+106.7468 	DATA 	Keypress: z
+106.7624 	EXP 	New trial (rep=3, index=2): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+106.7704 	EXP 	target: autoDraw = False
+106.7704 	EXP 	fix: autoDraw = False
+106.7704 	EXP 	key_remind: autoDraw = False
+106.7704 	EXP 	target: text = 'HHHHHH'
+106.7704 	EXP 	fix: autoDraw = True
+106.7704 	EXP 	key_remind: autoDraw = True
+107.5580 	EXP 	target: autoDraw = True
+107.5747 	EXP 	fix: autoDraw = False
+108.7292 	EXP 	New trial (rep=3, index=3): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+108.7338 	DATA 	Keypress: n
+108.7363 	EXP 	target: autoDraw = False
+108.7363 	EXP 	fix: autoDraw = False
+108.7363 	EXP 	key_remind: autoDraw = False
+108.7363 	EXP 	target: text = 'czerwony'
+108.7363 	EXP 	fix: autoDraw = True
+108.7363 	EXP 	key_remind: autoDraw = True
+109.5247 	EXP 	target: autoDraw = True
+109.5409 	EXP 	fix: autoDraw = False
+110.7625 	EXP 	New trial (rep=3, index=4): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+110.7671 	DATA 	Keypress: m
+110.7708 	EXP 	target: autoDraw = False
+110.7708 	EXP 	fix: autoDraw = False
+110.7708 	EXP 	key_remind: autoDraw = False
+110.7708 	EXP 	target: text = 'zielony'
+110.7708 	EXP 	fix: autoDraw = True
+110.7708 	EXP 	key_remind: autoDraw = True
+111.5580 	EXP 	target: autoDraw = True
+111.5740 	EXP 	fix: autoDraw = False
+112.1955 	EXP 	New trial (rep=3, index=5): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+112.2002 	DATA 	Keypress: x
+112.2033 	EXP 	target: autoDraw = False
+112.2033 	EXP 	fix: autoDraw = False
+112.2033 	EXP 	key_remind: autoDraw = False
+112.2033 	EXP 	target: text = 'czerwony'
+112.2033 	EXP 	fix: autoDraw = True
+112.2033 	EXP 	key_remind: autoDraw = True
+112.9905 	EXP 	target: autoDraw = True
+113.0079 	EXP 	fix: autoDraw = False
+114.4623 	EXP 	New trial (rep=3, index=6): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+114.4675 	DATA 	Keypress: x
+114.4711 	EXP 	target: autoDraw = False
+114.4711 	EXP 	fix: autoDraw = False
+114.4711 	EXP 	key_remind: autoDraw = False
+114.4711 	EXP 	target: text = 'żółty'
+114.4711 	EXP 	fix: autoDraw = True
+114.4711 	EXP 	key_remind: autoDraw = True
+115.2577 	EXP 	target: autoDraw = True
+115.2741 	EXP 	fix: autoDraw = False
+116.8284 	EXP 	New trial (rep=3, index=7): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+116.8330 	DATA 	Keypress: n
+116.8363 	EXP 	target: autoDraw = False
+116.8363 	EXP 	fix: autoDraw = False
+116.8363 	EXP 	key_remind: autoDraw = False
+116.8363 	EXP 	target: text = 'AAAAAA'
+116.8363 	EXP 	fix: autoDraw = True
+116.8363 	EXP 	key_remind: autoDraw = True
+117.6238 	EXP 	target: autoDraw = True
+117.6413 	EXP 	fix: autoDraw = False
+119.5612 	EXP 	New trial (rep=3, index=8): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+119.5661 	DATA 	Keypress: m
+119.5690 	EXP 	target: autoDraw = False
+119.5690 	EXP 	fix: autoDraw = False
+119.5690 	EXP 	key_remind: autoDraw = False
+119.5690 	EXP 	target: text = 'zielony'
+119.5690 	EXP 	fix: autoDraw = True
+119.5690 	EXP 	key_remind: autoDraw = True
+120.3562 	EXP 	target: autoDraw = True
+120.3734 	EXP 	fix: autoDraw = False
+121.1112 	EXP 	New trial (rep=3, index=9): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+121.1168 	DATA 	Keypress: z
+121.1204 	EXP 	target: autoDraw = False
+121.1204 	EXP 	fix: autoDraw = False
+121.1204 	EXP 	key_remind: autoDraw = False
+121.1204 	EXP 	target: text = 'żółty'
+121.1204 	EXP 	fix: autoDraw = True
+121.1204 	EXP 	key_remind: autoDraw = True
+121.9061 	EXP 	target: autoDraw = True
+121.9227 	EXP 	fix: autoDraw = False
+125.6446 	EXP 	New trial (rep=4, index=0): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+125.6490 	DATA 	Keypress: m
+125.6527 	EXP 	target: autoDraw = False
+125.6527 	EXP 	fix: autoDraw = False
+125.6527 	EXP 	key_remind: autoDraw = False
+125.6527 	EXP 	target: text = 'zielony'
+125.6527 	EXP 	fix: autoDraw = True
+125.6527 	EXP 	key_remind: autoDraw = True
+126.4390 	EXP 	target: autoDraw = True
+126.4559 	EXP 	fix: autoDraw = False
+127.7117 	EXP 	New trial (rep=4, index=1): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+127.7191 	DATA 	Keypress: z
+127.7219 	EXP 	target: autoDraw = False
+127.7219 	EXP 	fix: autoDraw = False
+127.7219 	EXP 	key_remind: autoDraw = False
+127.7219 	EXP 	target: text = 'niebieski'
+127.7219 	EXP 	fix: autoDraw = True
+127.7219 	EXP 	key_remind: autoDraw = True
+128.5226 	EXP 	target: autoDraw = True
+128.5226 	EXP 	fix: autoDraw = False
+132.0429 	DATA 	Keypress: z
+132.0607 	EXP 	New trial (rep=4, index=2): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+132.0689 	EXP 	target: autoDraw = False
+132.0689 	EXP 	fix: autoDraw = False
+132.0689 	EXP 	key_remind: autoDraw = False
+132.0689 	EXP 	target: text = 'zielony'
+132.0689 	EXP 	fix: autoDraw = True
+132.0689 	EXP 	key_remind: autoDraw = True
+132.8549 	EXP 	target: autoDraw = True
+132.8715 	EXP 	fix: autoDraw = False
+133.6928 	EXP 	New trial (rep=4, index=3): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+133.6972 	DATA 	Keypress: x
+133.6998 	EXP 	target: autoDraw = False
+133.6998 	EXP 	fix: autoDraw = False
+133.6998 	EXP 	key_remind: autoDraw = False
+133.6998 	EXP 	target: text = 'HHHHHH'
+133.6998 	EXP 	fix: autoDraw = True
+133.6998 	EXP 	key_remind: autoDraw = True
+134.4886 	EXP 	target: autoDraw = True
+134.5046 	EXP 	fix: autoDraw = False
+135.1761 	EXP 	New trial (rep=4, index=4): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+135.1807 	DATA 	Keypress: n
+135.1835 	EXP 	target: autoDraw = False
+135.1835 	EXP 	fix: autoDraw = False
+135.1835 	EXP 	key_remind: autoDraw = False
+135.1835 	EXP 	target: text = 'niebieski'
+135.1835 	EXP 	fix: autoDraw = True
+135.1835 	EXP 	key_remind: autoDraw = True
+135.9710 	EXP 	target: autoDraw = True
+135.9879 	EXP 	fix: autoDraw = False
+136.8256 	EXP 	New trial (rep=4, index=5): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+136.8301 	DATA 	Keypress: m
+136.8329 	EXP 	target: autoDraw = False
+136.8329 	EXP 	fix: autoDraw = False
+136.8329 	EXP 	key_remind: autoDraw = False
+136.8329 	EXP 	target: text = 'AAAAAA'
+136.8329 	EXP 	fix: autoDraw = True
+136.8329 	EXP 	key_remind: autoDraw = True
+137.6211 	EXP 	target: autoDraw = True
+137.6381 	EXP 	fix: autoDraw = False
+138.3756 	EXP 	New trial (rep=4, index=6): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+138.3803 	DATA 	Keypress: m
+138.3836 	EXP 	target: autoDraw = False
+138.3836 	EXP 	fix: autoDraw = False
+138.3836 	EXP 	key_remind: autoDraw = False
+138.3836 	EXP 	target: text = 'czerwony'
+138.3836 	EXP 	fix: autoDraw = True
+138.3836 	EXP 	key_remind: autoDraw = True
+139.1710 	EXP 	target: autoDraw = True
+139.1882 	EXP 	fix: autoDraw = False
+140.0273 	DATA 	Keypress: x
+140.0423 	EXP 	New trial (rep=4, index=7): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+140.0539 	EXP 	target: autoDraw = False
+140.0539 	EXP 	fix: autoDraw = False
+140.0539 	EXP 	key_remind: autoDraw = False
+140.0539 	EXP 	target: text = 'czerwony'
+140.0539 	EXP 	fix: autoDraw = True
+140.0539 	EXP 	key_remind: autoDraw = True
+140.8372 	EXP 	target: autoDraw = True
+140.8550 	EXP 	fix: autoDraw = False
+141.3927 	EXP 	New trial (rep=4, index=8): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+141.3976 	DATA 	Keypress: m
+141.4011 	EXP 	target: autoDraw = False
+141.4011 	EXP 	fix: autoDraw = False
+141.4011 	EXP 	key_remind: autoDraw = False
+141.4011 	EXP 	target: text = 'żółty'
+141.4011 	EXP 	fix: autoDraw = True
+141.4011 	EXP 	key_remind: autoDraw = True
+141.5583 	DATA 	Keypress: m
+142.1869 	EXP 	target: autoDraw = True
+142.2040 	EXP 	fix: autoDraw = False
+142.8076 	EXP 	New trial (rep=4, index=9): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+142.8112 	DATA 	Keypress: n
+142.8207 	EXP 	target: autoDraw = False
+142.8207 	EXP 	fix: autoDraw = False
+142.8207 	EXP 	key_remind: autoDraw = False
+142.8207 	EXP 	target: text = 'żółty'
+142.8207 	EXP 	fix: autoDraw = True
+142.8207 	EXP 	key_remind: autoDraw = True
+143.6033 	EXP 	target: autoDraw = True
+143.6367 	EXP 	fix: autoDraw = False
+144.1262 	DATA 	Keypress: n
+144.1408 	EXP 	New trial (rep=5, index=0): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+144.1533 	EXP 	target: autoDraw = False
+144.1533 	EXP 	fix: autoDraw = False
+144.1533 	EXP 	key_remind: autoDraw = False
+144.1533 	EXP 	target: text = 'żółty'
+144.1533 	EXP 	fix: autoDraw = True
+144.1533 	EXP 	key_remind: autoDraw = True
+144.9365 	EXP 	target: autoDraw = True
+144.9538 	EXP 	fix: autoDraw = False
+145.5581 	EXP 	New trial (rep=5, index=1): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+145.5626 	DATA 	Keypress: n
+145.5652 	EXP 	target: autoDraw = False
+145.5652 	EXP 	fix: autoDraw = False
+145.5652 	EXP 	key_remind: autoDraw = False
+145.5652 	EXP 	target: text = 'zielony'
+145.5652 	EXP 	fix: autoDraw = True
+145.5652 	EXP 	key_remind: autoDraw = True
+146.3530 	EXP 	target: autoDraw = True
+146.3698 	EXP 	fix: autoDraw = False
+147.2078 	EXP 	New trial (rep=5, index=2): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+147.2134 	DATA 	Keypress: x
+147.2170 	EXP 	target: autoDraw = False
+147.2170 	EXP 	fix: autoDraw = False
+147.2170 	EXP 	key_remind: autoDraw = False
+147.2170 	EXP 	target: text = 'czerwony'
+147.2170 	EXP 	fix: autoDraw = True
+147.2170 	EXP 	key_remind: autoDraw = True
+148.0031 	EXP 	target: autoDraw = True
+148.0196 	EXP 	fix: autoDraw = False
+148.6261 	DATA 	Keypress: m
+148.6409 	EXP 	New trial (rep=5, index=3): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+148.6493 	EXP 	target: autoDraw = False
+148.6493 	EXP 	fix: autoDraw = False
+148.6493 	EXP 	key_remind: autoDraw = False
+148.6493 	EXP 	target: text = 'AAAAAA'
+148.6493 	EXP 	fix: autoDraw = True
+148.6493 	EXP 	key_remind: autoDraw = True
+149.4362 	EXP 	target: autoDraw = True
+149.4525 	EXP 	fix: autoDraw = False
+149.9917 	EXP 	New trial (rep=5, index=4): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+149.9964 	DATA 	Keypress: n
+150.0000 	EXP 	target: autoDraw = False
+150.0000 	EXP 	fix: autoDraw = False
+150.0000 	EXP 	key_remind: autoDraw = False
+150.0000 	EXP 	target: text = 'czerwony'
+150.0000 	EXP 	fix: autoDraw = True
+150.0000 	EXP 	key_remind: autoDraw = True
+150.7859 	EXP 	target: autoDraw = True
+150.8026 	EXP 	fix: autoDraw = False
+153.5078 	DATA 	Keypress: x
+153.5234 	EXP 	New trial (rep=5, index=5): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+153.5354 	EXP 	target: autoDraw = False
+153.5354 	EXP 	fix: autoDraw = False
+153.5354 	EXP 	key_remind: autoDraw = False
+153.5354 	EXP 	target: text = 'HHHHHH'
+153.5354 	EXP 	fix: autoDraw = True
+153.5354 	EXP 	key_remind: autoDraw = True
+154.3149 	EXP 	target: autoDraw = True
+154.3525 	EXP 	fix: autoDraw = False
+155.0417 	DATA 	Keypress: n
+155.0573 	EXP 	New trial (rep=5, index=6): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+155.0659 	EXP 	target: autoDraw = False
+155.0659 	EXP 	fix: autoDraw = False
+155.0659 	EXP 	key_remind: autoDraw = False
+155.0659 	EXP 	target: text = 'niebieski'
+155.0659 	EXP 	fix: autoDraw = True
+155.0659 	EXP 	key_remind: autoDraw = True
+155.8519 	EXP 	target: autoDraw = True
+155.8687 	EXP 	fix: autoDraw = False
+157.8408 	EXP 	New trial (rep=5, index=7): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+157.8453 	DATA 	Keypress: z
+157.8488 	EXP 	target: autoDraw = False
+157.8488 	EXP 	fix: autoDraw = False
+157.8488 	EXP 	key_remind: autoDraw = False
+157.8488 	EXP 	target: text = 'zielony'
+157.8488 	EXP 	fix: autoDraw = True
+157.8488 	EXP 	key_remind: autoDraw = True
+158.6356 	EXP 	target: autoDraw = True
+158.6522 	EXP 	fix: autoDraw = False
+160.9068 	DATA 	Keypress: z
+160.9236 	EXP 	New trial (rep=5, index=8): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+160.9322 	EXP 	target: autoDraw = False
+160.9322 	EXP 	fix: autoDraw = False
+160.9322 	EXP 	key_remind: autoDraw = False
+160.9322 	EXP 	target: text = 'niebieski'
+160.9322 	EXP 	fix: autoDraw = True
+160.9322 	EXP 	key_remind: autoDraw = True
+161.7177 	EXP 	target: autoDraw = True
+161.7349 	EXP 	fix: autoDraw = False
+164.4732 	DATA 	Keypress: z
+164.4900 	EXP 	New trial (rep=5, index=9): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+164.4982 	EXP 	target: autoDraw = False
+164.4982 	EXP 	fix: autoDraw = False
+164.4982 	EXP 	key_remind: autoDraw = False
+164.4982 	EXP 	target: text = 'żółty'
+164.4982 	EXP 	fix: autoDraw = True
+164.4982 	EXP 	key_remind: autoDraw = True
+165.2840 	EXP 	target: autoDraw = True
+165.3014 	EXP 	fix: autoDraw = False
+168.0716 	EXP 	New trial (rep=6, index=0): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+168.0751 	DATA 	Keypress: m
+168.0839 	EXP 	target: autoDraw = False
+168.0839 	EXP 	fix: autoDraw = False
+168.0839 	EXP 	key_remind: autoDraw = False
+168.0839 	EXP 	target: text = 'żółty'
+168.0839 	EXP 	fix: autoDraw = True
+168.0839 	EXP 	key_remind: autoDraw = True
+168.8671 	EXP 	target: autoDraw = True
+168.8848 	EXP 	fix: autoDraw = False
+169.5884 	EXP 	New trial (rep=6, index=1): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+169.5932 	DATA 	Keypress: n
+169.5962 	EXP 	target: autoDraw = False
+169.5962 	EXP 	fix: autoDraw = False
+169.5962 	EXP 	key_remind: autoDraw = False
+169.5962 	EXP 	target: text = 'niebieski'
+169.5962 	EXP 	fix: autoDraw = True
+169.5962 	EXP 	key_remind: autoDraw = True
+170.3833 	EXP 	target: autoDraw = True
+170.4004 	EXP 	fix: autoDraw = False
+171.1048 	EXP 	New trial (rep=6, index=2): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+171.1095 	DATA 	Keypress: z
+171.1121 	EXP 	target: autoDraw = False
+171.1121 	EXP 	fix: autoDraw = False
+171.1121 	EXP 	key_remind: autoDraw = False
+171.1121 	EXP 	target: text = 'czerwony'
+171.1121 	EXP 	fix: autoDraw = True
+171.1121 	EXP 	key_remind: autoDraw = True
+171.9004 	EXP 	target: autoDraw = True
+171.9178 	EXP 	fix: autoDraw = False
+173.4389 	DATA 	Keypress: x
+173.4542 	EXP 	New trial (rep=6, index=3): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+173.4628 	EXP 	target: autoDraw = False
+173.4628 	EXP 	fix: autoDraw = False
+173.4628 	EXP 	key_remind: autoDraw = False
+173.4628 	EXP 	target: text = 'zielony'
+173.4628 	EXP 	fix: autoDraw = True
+173.4628 	EXP 	key_remind: autoDraw = True
+174.2495 	EXP 	target: autoDraw = True
+174.2664 	EXP 	fix: autoDraw = False
+174.7381 	EXP 	New trial (rep=6, index=4): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+174.7430 	DATA 	Keypress: x
+174.7466 	EXP 	target: autoDraw = False
+174.7466 	EXP 	fix: autoDraw = False
+174.7466 	EXP 	key_remind: autoDraw = False
+174.7466 	EXP 	target: text = 'HHHHHH'
+174.7466 	EXP 	fix: autoDraw = True
+174.7466 	EXP 	key_remind: autoDraw = True
+175.5331 	EXP 	target: autoDraw = True
+175.5501 	EXP 	fix: autoDraw = False
+176.0376 	EXP 	New trial (rep=6, index=5): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+176.0433 	DATA 	Keypress: n
+176.0472 	EXP 	target: autoDraw = False
+176.0472 	EXP 	fix: autoDraw = False
+176.0472 	EXP 	key_remind: autoDraw = False
+176.0472 	EXP 	target: text = 'niebieski'
+176.0472 	EXP 	fix: autoDraw = True
+176.0472 	EXP 	key_remind: autoDraw = True
+176.8332 	EXP 	target: autoDraw = True
+176.8496 	EXP 	fix: autoDraw = False
+177.9709 	EXP 	New trial (rep=6, index=6): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+177.9765 	DATA 	Keypress: m
+177.9800 	EXP 	target: autoDraw = False
+177.9800 	EXP 	fix: autoDraw = False
+177.9800 	EXP 	key_remind: autoDraw = False
+177.9800 	EXP 	target: text = 'czerwony'
+177.9800 	EXP 	fix: autoDraw = True
+177.9800 	EXP 	key_remind: autoDraw = True
+178.7657 	EXP 	target: autoDraw = True
+178.7824 	EXP 	fix: autoDraw = False
+180.1039 	EXP 	New trial (rep=6, index=7): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+180.1087 	DATA 	Keypress: m
+180.1121 	EXP 	target: autoDraw = False
+180.1121 	EXP 	fix: autoDraw = False
+180.1121 	EXP 	key_remind: autoDraw = False
+180.1121 	EXP 	target: text = 'żółty'
+180.1121 	EXP 	fix: autoDraw = True
+180.1121 	EXP 	key_remind: autoDraw = True
+180.8992 	EXP 	target: autoDraw = True
+180.9159 	EXP 	fix: autoDraw = False
+182.2044 	DATA 	Keypress: m
+182.2211 	EXP 	New trial (rep=6, index=8): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+182.2291 	EXP 	target: autoDraw = False
+182.2291 	EXP 	fix: autoDraw = False
+182.2291 	EXP 	key_remind: autoDraw = False
+182.2291 	EXP 	target: text = 'AAAAAA'
+182.2291 	EXP 	fix: autoDraw = True
+182.2291 	EXP 	key_remind: autoDraw = True
+183.0152 	EXP 	target: autoDraw = True
+183.0321 	EXP 	fix: autoDraw = False
+183.6866 	DATA 	Keypress: m
+183.7034 	EXP 	New trial (rep=6, index=9): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+183.7105 	EXP 	target: autoDraw = False
+183.7105 	EXP 	fix: autoDraw = False
+183.7105 	EXP 	key_remind: autoDraw = False
+183.7105 	EXP 	target: text = 'zielony'
+183.7105 	EXP 	fix: autoDraw = True
+183.7105 	EXP 	key_remind: autoDraw = True
+184.4983 	EXP 	target: autoDraw = True
+184.5160 	EXP 	fix: autoDraw = False
+185.3372 	EXP 	New trial (rep=7, index=0): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+185.3409 	DATA 	Keypress: z
+185.3435 	EXP 	target: autoDraw = False
+185.3435 	EXP 	fix: autoDraw = False
+185.3435 	EXP 	key_remind: autoDraw = False
+185.3435 	EXP 	target: text = 'zielony'
+185.3435 	EXP 	fix: autoDraw = True
+185.3435 	EXP 	key_remind: autoDraw = True
+186.1320 	EXP 	target: autoDraw = True
+186.1486 	EXP 	fix: autoDraw = False
+187.0532 	EXP 	New trial (rep=7, index=1): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+187.0569 	DATA 	Keypress: z
+187.0646 	EXP 	target: autoDraw = False
+187.0646 	EXP 	fix: autoDraw = False
+187.0646 	EXP 	key_remind: autoDraw = False
+187.0646 	EXP 	target: text = 'zielony'
+187.0646 	EXP 	fix: autoDraw = True
+187.0646 	EXP 	key_remind: autoDraw = True
+187.8480 	EXP 	target: autoDraw = True
+187.8646 	EXP 	fix: autoDraw = False
+188.2862 	EXP 	New trial (rep=7, index=2): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+188.2911 	DATA 	Keypress: x
+188.2944 	EXP 	target: autoDraw = False
+188.2944 	EXP 	fix: autoDraw = False
+188.2944 	EXP 	key_remind: autoDraw = False
+188.2944 	EXP 	target: text = 'AAAAAA'
+188.2944 	EXP 	fix: autoDraw = True
+188.2944 	EXP 	key_remind: autoDraw = True
+189.0811 	EXP 	target: autoDraw = True
+189.0983 	EXP 	fix: autoDraw = False
+190.1025 	EXP 	New trial (rep=7, index=3): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+190.1071 	DATA 	Keypress: m
+190.1112 	EXP 	target: autoDraw = False
+190.1112 	EXP 	fix: autoDraw = False
+190.1112 	EXP 	key_remind: autoDraw = False
+190.1112 	EXP 	target: text = 'niebieski'
+190.1112 	EXP 	fix: autoDraw = True
+190.1112 	EXP 	key_remind: autoDraw = True
+190.8984 	EXP 	target: autoDraw = True
+190.9143 	EXP 	fix: autoDraw = False
+191.5524 	EXP 	New trial (rep=7, index=4): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+191.5568 	DATA 	Keypress: z
+191.5612 	EXP 	target: autoDraw = False
+191.5612 	EXP 	fix: autoDraw = False
+191.5612 	EXP 	key_remind: autoDraw = False
+191.5612 	EXP 	target: text = 'HHHHHH'
+191.5612 	EXP 	fix: autoDraw = True
+191.5612 	EXP 	key_remind: autoDraw = True
+192.3481 	EXP 	target: autoDraw = True
+192.3640 	EXP 	fix: autoDraw = False
+192.9354 	EXP 	New trial (rep=7, index=5): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+192.9400 	DATA 	Keypress: n
+192.9427 	EXP 	target: autoDraw = False
+192.9427 	EXP 	fix: autoDraw = False
+192.9427 	EXP 	key_remind: autoDraw = False
+192.9427 	EXP 	target: text = 'niebieski'
+192.9427 	EXP 	fix: autoDraw = True
+192.9427 	EXP 	key_remind: autoDraw = True
+193.7306 	EXP 	target: autoDraw = True
+193.7478 	EXP 	fix: autoDraw = False
+194.6359 	DATA 	Keypress: m
+194.6519 	EXP 	New trial (rep=7, index=6): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+194.6610 	EXP 	target: autoDraw = False
+194.6610 	EXP 	fix: autoDraw = False
+194.6610 	EXP 	key_remind: autoDraw = False
+194.6610 	EXP 	target: text = 'żółty'
+194.6610 	EXP 	fix: autoDraw = True
+194.6610 	EXP 	key_remind: autoDraw = True
+195.4478 	EXP 	target: autoDraw = True
+195.4648 	EXP 	fix: autoDraw = False
+196.0032 	DATA 	Keypress: n
+196.0183 	EXP 	New trial (rep=7, index=7): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+196.0303 	EXP 	target: autoDraw = False
+196.0303 	EXP 	fix: autoDraw = False
+196.0303 	EXP 	key_remind: autoDraw = False
+196.0303 	EXP 	target: text = 'żółty'
+196.0303 	EXP 	fix: autoDraw = True
+196.0303 	EXP 	key_remind: autoDraw = True
+196.8136 	EXP 	target: autoDraw = True
+196.8307 	EXP 	fix: autoDraw = False
+197.4696 	DATA 	Keypress: m
+197.4849 	EXP 	New trial (rep=7, index=8): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+197.4939 	EXP 	target: autoDraw = False
+197.4939 	EXP 	fix: autoDraw = False
+197.4939 	EXP 	key_remind: autoDraw = False
+197.4939 	EXP 	target: text = 'czerwony'
+197.4939 	EXP 	fix: autoDraw = True
+197.4939 	EXP 	key_remind: autoDraw = True
+198.2800 	EXP 	target: autoDraw = True
+198.2966 	EXP 	fix: autoDraw = False
+198.8514 	EXP 	New trial (rep=7, index=9): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+198.8551 	DATA 	Keypress: m
+198.8631 	EXP 	target: autoDraw = False
+198.8631 	EXP 	fix: autoDraw = False
+198.8631 	EXP 	key_remind: autoDraw = False
+198.8631 	EXP 	target: text = 'czerwony'
+198.8631 	EXP 	fix: autoDraw = True
+198.8631 	EXP 	key_remind: autoDraw = True
+199.6464 	EXP 	target: autoDraw = True
+199.6590 	EXP 	fix: autoDraw = False
+200.6011 	EXP 	New trial (rep=8, index=0): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+200.6056 	DATA 	Keypress: x
+200.6081 	EXP 	target: autoDraw = False
+200.6081 	EXP 	fix: autoDraw = False
+200.6081 	EXP 	key_remind: autoDraw = False
+200.6081 	EXP 	target: text = 'niebieski'
+200.6081 	EXP 	fix: autoDraw = True
+200.6081 	EXP 	key_remind: autoDraw = True
+201.3969 	EXP 	target: autoDraw = True
+201.4135 	EXP 	fix: autoDraw = False
+202.0847 	EXP 	New trial (rep=8, index=1): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+202.0900 	DATA 	Keypress: m
+202.0936 	EXP 	target: autoDraw = False
+202.0936 	EXP 	fix: autoDraw = False
+202.0936 	EXP 	key_remind: autoDraw = False
+202.0936 	EXP 	target: text = 'żółty'
+202.0936 	EXP 	fix: autoDraw = True
+202.0936 	EXP 	key_remind: autoDraw = True
+202.8804 	EXP 	target: autoDraw = True
+202.8958 	EXP 	fix: autoDraw = False
+204.2689 	DATA 	Keypress: m
+204.2841 	EXP 	New trial (rep=8, index=2): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+204.2914 	EXP 	target: autoDraw = False
+204.2914 	EXP 	fix: autoDraw = False
+204.2914 	EXP 	key_remind: autoDraw = False
+204.2914 	EXP 	target: text = 'HHHHHH'
+204.2914 	EXP 	fix: autoDraw = True
+204.2914 	EXP 	key_remind: autoDraw = True
+205.0795 	EXP 	target: autoDraw = True
+205.0965 	EXP 	fix: autoDraw = False
+205.5507 	EXP 	New trial (rep=8, index=3): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+205.5549 	DATA 	Keypress: n
+205.5576 	EXP 	target: autoDraw = False
+205.5576 	EXP 	fix: autoDraw = False
+205.5576 	EXP 	key_remind: autoDraw = False
+205.5576 	EXP 	target: text = 'zielony'
+205.5576 	EXP 	fix: autoDraw = True
+205.5576 	EXP 	key_remind: autoDraw = True
+206.3457 	EXP 	target: autoDraw = True
+206.3623 	EXP 	fix: autoDraw = False
+209.2167 	EXP 	New trial (rep=8, index=4): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+209.2213 	DATA 	Keypress: z
+209.2241 	EXP 	target: autoDraw = False
+209.2241 	EXP 	fix: autoDraw = False
+209.2241 	EXP 	key_remind: autoDraw = False
+209.2241 	EXP 	target: text = 'żółty'
+209.2241 	EXP 	fix: autoDraw = True
+209.2241 	EXP 	key_remind: autoDraw = True
+210.0123 	EXP 	target: autoDraw = True
+210.0298 	EXP 	fix: autoDraw = False
+210.5666 	EXP 	New trial (rep=8, index=5): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+210.5713 	DATA 	Keypress: n
+210.5744 	EXP 	target: autoDraw = False
+210.5744 	EXP 	fix: autoDraw = False
+210.5744 	EXP 	key_remind: autoDraw = False
+210.5744 	EXP 	target: text = 'zielony'
+210.5744 	EXP 	fix: autoDraw = True
+210.5744 	EXP 	key_remind: autoDraw = True
+211.3620 	EXP 	target: autoDraw = True
+211.3783 	EXP 	fix: autoDraw = False
+211.8501 	DATA 	Keypress: x
+211.8675 	EXP 	New trial (rep=8, index=6): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+211.8763 	EXP 	target: autoDraw = False
+211.8763 	EXP 	fix: autoDraw = False
+211.8763 	EXP 	key_remind: autoDraw = False
+211.8763 	EXP 	target: text = 'czerwony'
+211.8763 	EXP 	fix: autoDraw = True
+211.8763 	EXP 	key_remind: autoDraw = True
+212.6626 	EXP 	target: autoDraw = True
+212.6741 	EXP 	fix: autoDraw = False
+213.6663 	EXP 	New trial (rep=8, index=7): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+213.6712 	DATA 	Keypress: m
+213.6748 	EXP 	target: autoDraw = False
+213.6748 	EXP 	fix: autoDraw = False
+213.6748 	EXP 	key_remind: autoDraw = False
+213.6748 	EXP 	target: text = 'niebieski'
+213.6748 	EXP 	fix: autoDraw = True
+213.6748 	EXP 	key_remind: autoDraw = True
+214.4617 	EXP 	target: autoDraw = True
+214.4786 	EXP 	fix: autoDraw = False
+215.8825 	EXP 	New trial (rep=8, index=8): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+215.8883 	DATA 	Keypress: z
+215.8919 	EXP 	target: autoDraw = False
+215.8919 	EXP 	fix: autoDraw = False
+215.8919 	EXP 	key_remind: autoDraw = False
+215.8919 	EXP 	target: text = 'czerwony'
+215.8919 	EXP 	fix: autoDraw = True
+215.8919 	EXP 	key_remind: autoDraw = True
+216.6783 	EXP 	target: autoDraw = True
+216.6949 	EXP 	fix: autoDraw = False
+218.1521 	EXP 	New trial (rep=8, index=9): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+218.1565 	DATA 	Keypress: x
+218.1591 	EXP 	target: autoDraw = False
+218.1591 	EXP 	fix: autoDraw = False
+218.1591 	EXP 	key_remind: autoDraw = False
+218.1591 	EXP 	target: text = 'AAAAAA'
+218.1591 	EXP 	fix: autoDraw = True
+218.1591 	EXP 	key_remind: autoDraw = True
+218.9615 	EXP 	target: autoDraw = True
+218.9615 	EXP 	fix: autoDraw = False
+219.4653 	EXP 	New trial (rep=9, index=0): {'word': 'czerwony', 'color': 'green', 'zgodny': 0, 'correctANS': 'x'}
+219.4701 	DATA 	Keypress: n
+219.4729 	EXP 	target: autoDraw = False
+219.4729 	EXP 	fix: autoDraw = False
+219.4729 	EXP 	key_remind: autoDraw = False
+219.4729 	EXP 	target: text = 'czerwony'
+219.4729 	EXP 	fix: autoDraw = True
+219.4729 	EXP 	key_remind: autoDraw = True
+220.2604 	EXP 	target: autoDraw = True
+220.2772 	EXP 	fix: autoDraw = False
+222.0336 	DATA 	Keypress: x
+222.0492 	EXP 	New trial (rep=9, index=1): {'word': 'zielony', 'color': 'blue', 'zgodny': 0, 'correctANS': 'z'}
+222.0575 	EXP 	target: autoDraw = False
+222.0575 	EXP 	fix: autoDraw = False
+222.0575 	EXP 	key_remind: autoDraw = False
+222.0575 	EXP 	target: text = 'zielony'
+222.0575 	EXP 	fix: autoDraw = True
+222.0575 	EXP 	key_remind: autoDraw = True
+222.8435 	EXP 	target: autoDraw = True
+222.8610 	EXP 	fix: autoDraw = False
+224.2659 	EXP 	New trial (rep=9, index=2): {'word': 'niebieski', 'color': 'blue', 'zgodny': 1, 'correctANS': 'z'}
+224.2715 	DATA 	Keypress: z
+224.2745 	EXP 	target: autoDraw = False
+224.2745 	EXP 	fix: autoDraw = False
+224.2745 	EXP 	key_remind: autoDraw = False
+224.2745 	EXP 	target: text = 'niebieski'
+224.2745 	EXP 	fix: autoDraw = True
+224.2745 	EXP 	key_remind: autoDraw = True
+225.0606 	EXP 	target: autoDraw = True
+225.0768 	EXP 	fix: autoDraw = False
+225.6984 	DATA 	Keypress: z
+225.7145 	EXP 	New trial (rep=9, index=3): {'word': 'niebieski', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+225.7271 	EXP 	target: autoDraw = False
+225.7271 	EXP 	fix: autoDraw = False
+225.7271 	EXP 	key_remind: autoDraw = False
+225.7271 	EXP 	target: text = 'niebieski'
+225.7271 	EXP 	fix: autoDraw = True
+225.7271 	EXP 	key_remind: autoDraw = True
+226.5098 	EXP 	target: autoDraw = True
+226.5265 	EXP 	fix: autoDraw = False
+227.1938 	EXP 	New trial (rep=9, index=4): {'word': 'czerwony', 'color': 'red', 'zgodny': 1, 'correctANS': 'm'}
+227.1995 	DATA 	Keypress: m
+227.2097 	EXP 	target: autoDraw = False
+227.2097 	EXP 	fix: autoDraw = False
+227.2097 	EXP 	key_remind: autoDraw = False
+227.2097 	EXP 	target: text = 'czerwony'
+227.2097 	EXP 	fix: autoDraw = True
+227.2097 	EXP 	key_remind: autoDraw = True
+227.9934 	EXP 	target: autoDraw = True
+228.0096 	EXP 	fix: autoDraw = False
+231.9924 	EXP 	target: autoDraw = False
+232.7972 	DATA 	Keypress: m
+232.8126 	EXP 	New trial (rep=9, index=5): {'word': 'HHHHHH', 'color': 'yellow', 'zgodny': None, 'correctANS': 'n'}
+232.8256 	EXP 	target: autoDraw = False
+232.8256 	EXP 	fix: autoDraw = False
+232.8256 	EXP 	key_remind: autoDraw = False
+232.8256 	EXP 	target: text = 'HHHHHH'
+232.8256 	EXP 	fix: autoDraw = True
+232.8256 	EXP 	key_remind: autoDraw = True
+233.6088 	EXP 	target: autoDraw = True
+233.6262 	EXP 	fix: autoDraw = False
+234.1981 	DATA 	Keypress: n
+234.2135 	EXP 	New trial (rep=9, index=6): {'word': 'żółty', 'color': 'red', 'zgodny': 0, 'correctANS': 'm'}
+234.2224 	EXP 	target: autoDraw = False
+234.2224 	EXP 	fix: autoDraw = False
+234.2224 	EXP 	key_remind: autoDraw = False
+234.2224 	EXP 	target: text = 'żółty'
+234.2224 	EXP 	fix: autoDraw = True
+234.2224 	EXP 	key_remind: autoDraw = True
+235.0085 	EXP 	target: autoDraw = True
+235.0255 	EXP 	fix: autoDraw = False
+235.8969 	EXP 	New trial (rep=9, index=7): {'word': 'zielony', 'color': 'green', 'zgodny': 1, 'correctANS': 'x'}
+235.9017 	DATA 	Keypress: m
+235.9051 	EXP 	target: autoDraw = False
+235.9051 	EXP 	fix: autoDraw = False
+235.9051 	EXP 	key_remind: autoDraw = False
+235.9051 	EXP 	target: text = 'zielony'
+235.9051 	EXP 	fix: autoDraw = True
+235.9051 	EXP 	key_remind: autoDraw = True
+236.6919 	EXP 	target: autoDraw = True
+236.7085 	EXP 	fix: autoDraw = False
+237.9970 	EXP 	New trial (rep=9, index=8): {'word': 'AAAAAA', 'color': 'red', 'zgodny': None, 'correctANS': 'm'}
+238.0021 	DATA 	Keypress: z
+238.0056 	EXP 	target: autoDraw = False
+238.0056 	EXP 	fix: autoDraw = False
+238.0056 	EXP 	key_remind: autoDraw = False
+238.0056 	EXP 	target: text = 'AAAAAA'
+238.0056 	EXP 	fix: autoDraw = True
+238.0056 	EXP 	key_remind: autoDraw = True
+238.7914 	EXP 	target: autoDraw = True
+238.8083 	EXP 	fix: autoDraw = False
+241.5791 	EXP 	New trial (rep=9, index=9): {'word': 'żółty', 'color': 'yellow', 'zgodny': 1, 'correctANS': 'n'}
+241.5843 	DATA 	Keypress: n
+241.5876 	EXP 	target: autoDraw = False
+241.5876 	EXP 	fix: autoDraw = False
+241.5876 	EXP 	key_remind: autoDraw = False
+241.5876 	EXP 	target: text = 'żółty'
+241.5876 	EXP 	fix: autoDraw = True
+241.5876 	EXP 	key_remind: autoDraw = True
+242.3744 	EXP 	target: autoDraw = True
+242.3927 	EXP 	fix: autoDraw = False
+242.9480 	DATA 	Keypress: n
+242.9584 	EXP 	target: autoDraw = False
+242.9584 	EXP 	fix: autoDraw = False
+242.9584 	EXP 	key_remind: autoDraw = False
+242.9584 	EXP 	end_text: autoDraw = True
+248.9598 	DATA 	Keypress: space
+249.9429 	DATA 	Keypress: space
+251.4427 	DATA 	Keypress: escape
+251.6087 	EXP 	window1: mouseVisible = True
